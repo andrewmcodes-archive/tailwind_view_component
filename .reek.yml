@@ -1,0 +1,8 @@
+detectors:
+  IrresponsibleModule:
+    enabled: false
+  MissingSafeMethod:
+    enabled: false
+exclude_paths:
+  - tmp
+  - vendor

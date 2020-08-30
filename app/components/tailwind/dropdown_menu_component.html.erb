@@ -1,0 +1,8 @@
+<%= render Tailwind::BaseComponent.new(**@kwargs) do %>
+  <% if @header.present? %>
+    <div class="dropdown-header">
+      <%= @header %>
+    </div>
+  <% end %>
+  <%= content %>
+<% end %>

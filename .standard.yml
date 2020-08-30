@@ -1,0 +1,16 @@
+fix: true
+parallel: true
+format: progress
+ruby_version: 2.7.1
+ignore:
+  - "bin/**/*"
+  - "db/schema.rb"
+  - "log/**/*"
+  - "node_modules/**/*"
+  - "demo/node_modules/**/*"
+  - "public/**/*"
+  - "storage/**/*"
+  - "tmp/**/*"
+  - "vendor/**/*"
+  - "test/**/*":
+      - Standard/SemanticBlocks
