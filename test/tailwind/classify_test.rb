@@ -248,10 +248,12 @@ class TailwindClassifyTest < Minitest::Test
 
   def test_flex_grow
     assert_generated_class("flex-grow-0", {flex_grow: 0})
+    assert_generated_class("flex-grow", {flex_grow: 1})
   end
 
   def test_flex_shrink
     assert_generated_class("flex-shrink-0", {flex_shrink: 0})
+    assert_generated_class("flex-shrink", {flex_shrink: 1})
   end
 
   def test_raises_error_when_passing_in_a_tailwind_css_class_name_in_development
