@@ -16,3 +16,4 @@ demo/public/packs/
 demo/tmp/
 demo/config/master.key
 tailwind_view_component*.gem
+.idea

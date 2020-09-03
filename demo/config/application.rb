@@ -18,10 +18,10 @@ module Demo
     # Initialize configuration defaults for originally generated Rails version.
     config.view_component_storybook.show_stories = true
     config.action_dispatch.default_headers.clear
-    config.allowed_cors_origins = "http://localhost:5000"
+
     config.action_dispatch.default_headers = {
       "Access-Control-Allow-Origin" => "*",
-      "Access-Control-Request-Method" => %w[GET PUT POST].join(",")
+      "Access-Control-Request-Method" => %w{GET}.join(",")
     }
   end
 end

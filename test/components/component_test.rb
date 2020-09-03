@@ -8,24 +8,8 @@ class TailwindComponentTest < Minitest::Test
   def test_tailwind_components_provide_a_consistent_interface
     # Components with any arguments necessary to make them render
     components_with_args = [
-      [Tailwind::AvatarComponent, {alt: "github", src: "https://github.com/github.png"}],
       [Tailwind::BaseComponent, {tag: :div}],
-      [Tailwind::BorderBoxComponent, {}, proc { |component| component.slot(:header) { "Foo" } }],
       [Tailwind::BoxComponent, {}],
-      [Tailwind::BreadcrumbComponent, {}, proc { |component| component.slot(:item) { "Foo" } }],
-      [Tailwind::ButtonComponent, {}],
-      [Tailwind::DetailsComponent, {}, lambda do |component|
-        component.slot(:summary) { "Foo" }
-        component.slot(:body) { "Bar" }
-      end],
-      [Tailwind::DropdownMenuComponent, {}],
-      [Tailwind::FlexComponent, {}],
-      [Tailwind::FlexItemComponent, {flex_auto: true}],
-      [Tailwind::HeadingComponent, {}],
-      [Tailwind::LabelComponent, {title: "Hello!"}],
-      [Tailwind::LinkComponent, {href: "https://www.google.com"}],
-      [Tailwind::SubheadComponent, {heading: "Foo"}, proc { |component| component.slot(:heading) { "Foo" } }],
-      [Tailwind::TextComponent, {}]
     ]
 
     ignored_components = ["Tailwind::Component"]

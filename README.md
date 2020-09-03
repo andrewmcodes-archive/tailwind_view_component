@@ -26,21 +26,7 @@ Tailwind components should be styled using the built-in arguments when possible.
 
 Example label built with Tailwind CSS:
 
-```html
-<span
-  title="Label: Suggested"
-  class="Label Label--outline Label--outline-green ml-2 v-align-middle"
-  >Suggested</span
->
-```
-
-The same label using `Tailwind::LabelComponent`:
-
-```erb
-<%= render Tailwind::LabelComponent.new(ml: 2, vertical_align: :middle, scheme: :green, title: "Label: Suggested") do %>
-  Suggested
-<% end %>
-```
+TODO
 
 Some components have their own specific arguments, but they can all be styled with the following arguments.
 
@@ -93,16 +79,8 @@ Some components have their own specific arguments, but they can all be styled wi
 
 Different classes can be used for different breakpoints just like in Tailwind CSS. Simply use an array with the four values required for `[none, small, medium, large]`. If no breakpoint is needed for a breakpoint, pass `nil`.
 
-Example heading built with Tailwind CSS:
-
-```html
-<h1 class="mt-0 mt-lg-4">Hello world</h1>
-```
-
-The same label using `Tailwind::HeadingComponent`:
-
 ```erb
-<%= render Tailwind::HeadingComponent.new(mt: [0, nil, nil, 4]) do %>
+<%= render Tailwind::BaseComponent.new(mt: [0, nil, nil, 4]) do %>
   Hello world
 <% end %>
 ```
@@ -116,7 +94,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/andrew
 Run
 
 ```bash
-script/setup
+bin/setup
 ```
 
 to install all necessary dependencies
@@ -136,7 +114,7 @@ _We recommend having [overmind](https://github.com/DarthSim/overmind) installed 
 To run storybook:
 
 ```bash
-script/storybook
+bin/storybook
 ```
 
 ### Developing with another app

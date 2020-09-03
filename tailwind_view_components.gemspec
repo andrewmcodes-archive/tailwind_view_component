@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "tailwind/view_components/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "tailwind_view_component"
+  spec.name = "tailwind_view_components"
   spec.version = Tailwind::ViewComponents::VERSION::STRING
   spec.authors = ["Andrew Mason"]
   spec.email = ["andrewmcodes@protonmail.com"]
@@ -29,8 +29,10 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "rails", [">= 5.0.0", "< 7.0"]
   spec.add_runtime_dependency "view_component", [">= 2.0.0", "< 3.0"]
-  spec.add_runtime_dependency "octicons_helper", [">= 9.0.0", "< 11.0.0"]
+
   spec.add_development_dependency "minitest", "= 5.6.0"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "standard", "~> 0.5"
+  spec.add_development_dependency "simplecov", "~> 0.18.0"
+  spec.add_development_dependency "simplecov-console", "~> 0.7.2"
 end
