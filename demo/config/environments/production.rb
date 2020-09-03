@@ -101,7 +101,7 @@ Rails.application.configure do
   # config.active_record.database_selector = { delay: 2.seconds }
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
-config.view_component_storybook.stories_path = Rails.root.join("./view_components/stories")
+  config.view_component_storybook.stories_path = Rails.root.join("./view_components/stories")
 end
 
 require "tailwind/view_components/engine"

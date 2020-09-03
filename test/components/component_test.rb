@@ -9,7 +9,7 @@ class TailwindComponentTest < Minitest::Test
     # Components with any arguments necessary to make them render
     components_with_args = [
       [Tailwind::BaseComponent, {tag: :div}],
-      [Tailwind::BoxComponent, {}],
+      [Tailwind::BoxComponent, {}]
     ]
 
     ignored_components = ["Tailwind::Component"]

@@ -94,13 +94,6 @@ class TailwindClassifyTest < Minitest::Test
     assert_generated_class("invisible", {visible: false})
   end
 
-  # def test_hide
-  #   assert_generated_class("hide-sm", {hide: :sm})
-  #   assert_generated_class("hide-md", {hide: :md})
-  #   assert_generated_class("hide-lg", {hide: :lg})
-  #   assert_generated_class("hide-xl", {hide: :xl})
-  # end
-
   def test_vertical_align
     assert_generated_class("align-baseline", {vertical_align: :baseline})
     assert_generated_class("align-top", {vertical_align: :top})
